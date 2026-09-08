@@ -1,77 +1,97 @@
 # SDR Experiment Session
 
-> Duplicate this file for each session and rename it using the date and a short description.
+> One session, one experiment, one entry. Record enough to reproduce it later.
 
 ## Session Details
 
 - **Date:** YYYY-MM-DD
-- **Start / end time:** HH:MM - HH:MM
+- **Time:** HH:MM–HH:MM
 - **Location:**
-- **Operator:**
-- **Weather / conditions:**
+- **Operator:** 
 - **Session goal:**
+- **Learning objective:**
 
-## Hardware and Software
+## Station Setup
 
-- **SDR:**
+- **SDR:** Nooelec NESDR SMArt v5
 - **Antenna:**
 - **Computer / host:**
-- **SDR software and version:**
-- **Driver / firmware:**
+- **Software:** SDR++
+- **Driver:**
 - **Sample rate:**
 - **Gain:**
 - **Other equipment:**
 
-## Experiment Setup
+## Radio Setup
 
-- **Frequency range:**
-- **Center frequency:**
+- **Frequency / range:**
+- **Mode / modulation:**
 - **Bandwidth / filter:**
-- **Modulation or mode:**
-- **Demodulator settings:**
-- **Recording or capture file:**
-- **Connections or changes from the previous session:**
-
-## Observations
-
-Describe what appeared in the spectrum, waterfall, audio, or decoded data.
-
-- **Signals observed:**
-- **Signal strength / quality:**
-- **Timing or repetition:**
-- **Interference / noise:**
-- **Notable screenshots or files:**
+- **Center frequency:**
+- **Other settings:**
 
 ## Experiment Log
 
-| Time | Change or action | Expected result | Actual result |
-|------|------------------|-----------------|---------------|
-|      |                  |                 |               |
-|      |                  |                 |               |
-|      |                  |                 |               |
+| Time | Action / change | Expected | Observed |
+|------|-----------------|----------|----------|
+|      |                 |          |          |
+|      |                 |          |          |
+|      |                 |          |          |
+
+## Observations
+
+### Spectrum / Waterfall
+
+What did the RF environment look like?
+
+- Signals observed:
+- Relative signal strength:
+- Noise floor:
+- Interference:
+- Patterns / repetition:
+
+### Audio / Data
+
+What could actually be heard or decoded?
+
+- Signal:
+- Quality:
+- Identifiable content:
+- Changes caused by tuning/settings:
+
+## Concepts Learned
+
+### New concepts
+
+- 
+
+### Things that became clearer
+
+- 
+
+### Things I still don't understand
+
+- 
 
 ## Results
 
 - **What worked:**
-- **What did not work:**
-- **Measurements or decoded data:**
+- **What didn't:**
+- **Most interesting observation:**
 - **Main conclusion:**
 
 ## Follow-up
 
-- [ ] Repeat the experiment with:
-- [ ] Try a different antenna or location.
-- [ ] Adjust gain, bandwidth, or sample rate.
-- [ ] Analyze or archive the capture files.
-- [ ] Investigate:
+- [ ] 
+- [ ] 
+- [ ] 
 
-## References and Files
+## Files
 
+- **Screenshots:**
+- **Recordings / captures:**
 - **Related notes:**
-- **Documentation / URLs:**
-- **Capture files:**
-- **Images:**
 
-## Freeform Notes
+## Freeform Field Notes
 
-<!-- Record details that do not fit the sections above. -->
+<!-- Weird signals, questions, ideas, observations, rabbit holes, etc. -->
