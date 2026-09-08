@@ -17,6 +17,9 @@
 - **Gain:** Tuner AGC initially; later experimented with manual gain
 - **Other equipment:** Headphones, C4
 
+## Building the Receive Chain
+![](../diagrams/001/sdr-receive-chain.svg)
+
 ## Session Goal
 
 It is Day 1 with an actual SDR and the plan is deliberately simple:

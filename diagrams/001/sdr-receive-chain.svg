@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#6d7b7a"/>
+    </marker>
+    <style>
+      .bg { fill:#f3f0e8; }
+      .ink { fill:#203331; }
+      .muted { fill:#657471; }
+      .line { stroke:#6d7b7a; stroke-width:4; fill:none; }
+      .box { fill:#e4e7df; stroke:#405956; stroke-width:3; }
+      .screen { fill:#263b39; stroke:#405956; stroke-width:3; }
+      .signal { stroke:#a9c7c1; stroke-width:4; fill:none; }
+      .tune { stroke:#d17b5b; stroke-width:4; }
+      .title { font:700 42px Arial, sans-serif; }
+      .label { font:700 27px Arial, sans-serif; }
+      .small { font:22px Arial, sans-serif; }
+      .tiny { font:19px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="650"/>
+
+  <text x="800" y="70" text-anchor="middle" class="ink title">SDR Receive Chain — Day 1 Setup</text>
+  <text x="800" y="108" text-anchor="middle" class="muted small">RF → antenna → SDR hardware → digital samples → software → audio</text>
+
+  <!-- RF waves -->
+  <g transform="translate(70 220)">
+    <path d="M0 55 Q25 15 50 55 T100 55" class="line"/>
+    <path d="M0 85 Q35 30 70 85 T140 85" class="line"/>
+    <path d="M0 120 Q45 50 90 120 T180 120" class="line"/>
+    <text x="90" y="180" text-anchor="middle" class="ink label">RF signal</text>
+    <text x="90" y="210" text-anchor="middle" class="muted tiny">e.g. 98.9 MHz</text>
+  </g>
+
+  <line x1="260" y1="310" x2="335" y2="310" class="line" marker-end="url(#arrow)"/>
+
+  <!-- antenna -->
+  <g>
+    <line x1="390" y1="190" x2="390" y2="320" stroke="#203331" stroke-width="9" stroke-linecap="round"/>
+    <line x1="355" y1="320" x2="425" y2="320" stroke="#203331" stroke-width="6"/>
+    <rect x="350" y="330" width="80" height="55" rx="9" class="box"/>
+    <text x="390" y="430" text-anchor="middle" class="ink label">Antenna</text>
+    <text x="390" y="462" text-anchor="middle" class="muted tiny">telescopic whip</text>
+  </g>
+
+  <line x1="445" y1="310" x2="545" y2="310" class="line" marker-end="url(#arrow)"/>
+  <text x="495" y="280" text-anchor="middle" class="muted tiny">coax / SMA</text>
+
+  <!-- SDR -->
+  <g>
+    <rect x="565" y="230" width="265" height="160" rx="18" class="box"/>
+    <rect x="545" y="285" width="22" height="50" rx="5" fill="#8b9996" stroke="#405956" stroke-width="3"/>
+    <text x="697" y="275" text-anchor="middle" class="ink label">NESDR SMArt v5</text>
+    <text x="697" y="312" text-anchor="middle" class="muted small">R820T2 tuner</text>
+    <text x="697" y="350" text-anchor="middle" class="muted tiny">RF → digital I/Q samples</text>
+    <text x="697" y="425" text-anchor="middle" class="muted tiny">female SMA input</text>
+  </g>
+
+  <line x1="850" y1="310" x2="940" y2="310" class="line" marker-end="url(#arrow)"/>
+  <text x="895" y="280" text-anchor="middle" class="muted tiny">USB</text>
+
+  <!-- computer -->
+  <g>
+    <rect x="960" y="200" width="315" height="220" rx="18" class="box"/>
+    <rect x="990" y="235" width="255" height="115" rx="7" class="screen"/>
+    <path d="M1010 325 L1035 310 L1060 316 L1090 260 L1120 315 L1150 300 L1180 320 L1215 275" class="signal"/>
+    <line x1="1120" y1="245" x2="1120" y2="340" class="tune"/>
+    <text x="1117" y="390" text-anchor="middle" class="ink label">Windows + SDR++</text>
+    <text x="1117" y="455" text-anchor="middle" class="muted tiny">tune • filter • demodulate • gain</text>
+  </g>
+
+  <line x1="1295" y1="310" x2="1370" y2="310" class="line" marker-end="url(#arrow)"/>
+  <text x="1332" y="280" text-anchor="middle" class="muted tiny">audio</text>
+
+  <!-- headphones -->
+  <g>
+    <path d="M1405 290 A65 65 0 0 1 1535 290" stroke="#203331" stroke-width="11" fill="none"/>
+    <rect x="1395" y="285" width="28" height="75" rx="12" class="box"/>
+    <rect x="1517" y="285" width="28" height="75" rx="12" class="box"/>
+    <text x="1470" y="420" text-anchor="middle" class="ink label">Ears</text>
+    <text x="1470" y="452" text-anchor="middle" class="muted tiny">Keith Urban, apparently</text>
+  </g>
+
+  <line x1="350" y1="525" x2="1545" y2="525" stroke="#aeb7b3" stroke-width="2" stroke-dasharray="10 10"/>
+  <text x="947" y="570" text-anchor="middle" class="muted small">antenna → coax/SMA → SDR → USB → computer/SDR++ → audio output</text>
+</svg>
