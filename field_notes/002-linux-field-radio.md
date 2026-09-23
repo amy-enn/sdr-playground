@@ -190,6 +190,8 @@ device**.
 This ThinkPad had a Jabra Speak2 40 connected and Ubuntu was already
 happily sending YouTube through it.
 
+![SDR++ successfully running on Ubuntu before connecting the NESDR](../screenshots/002/01-sdrpp-first-launch.png)
+
 SDR++ opened as expected, then I connected the NESDR.
 
 SDR++ saw:
@@ -266,6 +268,8 @@ ears
 
 **First successful RF reception on Linux.**
 
+![First successful RF reception using the NESDR on Ubuntu](../screenshots/002/02-first-linux-rf-reception.png)
+
 At this point the primary mission for Session 002 was technically
 complete but I didn't see the point in stopping.
 
@@ -289,6 +293,8 @@ Tuner AGC: Enabled
 
 The waterfall looked completely different. Instead of giant broad FM stations, I had **tons of extremely thin
 persistent vertical lines**.
+
+![Dense narrow traces observed around 433 MHz](../screenshots/002/03-70cm-waterfall-reconnaissance.png)
 
 At first:
 
@@ -346,7 +352,7 @@ Now that UHF was alive, I wanted a known signal.
 Target:
 
 ``` text
-VE3WCC
+VE3WCC - West Carleton Amateur Radio Club
 432.358 MHz
 CW propagation beacon
 ```
@@ -370,6 +376,8 @@ Tuner AGC: Enabled
 
 Still nothing I could confidently identify as the beacon.
 
+![Attempting to receive the VE3WCC beacon at 432.358 MHZ](../screenshots/002/04-432358-beacon-attempt.png)
+
 So:
 
 > **Beacon not detected under the conditions of this session.**
@@ -391,6 +399,8 @@ No confirmed beacon, but I still learned something.
 
 I had another antenna available: a homemade one, known to have previously worked with an electronic spectrum analyzer.
 
+!["Dragon Lord", an improvised antenna](../images/002/dragon_lord.jpg)
+
 This thing looked sufficiently degenerate and radio-ish that I thought:
 
 > Ah yes. An HF antenna?
@@ -404,6 +414,8 @@ For HF, I changed:
 ``` text
 Direct Sampling: Q branch
 ```
+
+![Q-branch direct sampling accidentally enabled while still tuned in the UHF region](../screenshots/002/05-q-branch-wrong-band.png)
 
 This was an important conceptual distinction.
 
@@ -431,6 +443,8 @@ AM, roughly 10 kHz bandwidth.
 
 This was the first time I'd intentionally looked at the HF spectrum with
 the SDR.
+
+![First deliberate HR spectrum view at 10 MHz using Q-branch direct sampling](../screenshots/002/06-first-hf-spectrum-10mhz.png)
 
 No confirmed station.
 
@@ -745,17 +759,16 @@ images/
 ```
 
 **To Do**
-- Above screenshots will be added later.
-- Session 001 also still needs its screenshots rescued from the desktop
-and added to the repo.
+- ~~Above screenshots will be added later.~~
+- ~~Session 001 also still needs its screenshots rescued from the desktop and added to the repo.~~
 
 
 ------------------------------------------------------------------------
 
 # Follow-Up
 
--   [ ] Add screenshots from Session 002
--   [ ] Go back to the desktop and add the Session 001 screenshots
+-   [x] Add screenshots from Session 002
+-   [x] Go back to the desktop and add the Session 001 screenshots
 -   [ ] Find a known UHF signal and use the Yagi to observe
     directionality
 -   [ ] Rotate the Yagi through 360° and compare maximums, minimums, and
