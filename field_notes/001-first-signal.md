@@ -85,11 +85,15 @@ With the NESDR connected and selected as the RTL-SDR source in SDR++, I initiall
 
 At first I wasn't receiving anything because the RTL-SDR device itself had not actually been selected in the source panel.
 
+![SDR++ open with no active NESDR device and no incoming RF stream](../screenshots/001/01-no-rf-stream.png)
+
 After refreshing the device list and selecting the NESDR, the spectrum immediately came alive.
 
 There was now a visible noise floor and activity in the waterfall.
 
 **The radio was officially radioing.**
+
+![First live RF spectrum after selecting the NSDR](../screenshots/001/02-first-rf-spectrum.png)
 
 ---
 
@@ -111,6 +115,8 @@ I increased the SDR sample rate from:
 
 This dramatically widened the visible RF spectrum.
 
+![FM broadcast spectrum after increasing the RTL-SDR sample rate to 2.4MHz](../screenshots/001/03-fm-wide-spectrum.png)
+
 A large, broad signal became clearly visible around:
 
 **98.9 MHz**
@@ -120,6 +126,8 @@ Since I believed the country station was broadcasting on 98.9 MHz, this was the 
 I clicked directly onto the centre of the ~98.9 MHz signal.
 
 The audio immediately cleared up.
+
+![98.9 MHz FM centred in SDR++](../screenshots/001/06-98-9mhz-first-signal.png)
 
 ### First major SDR realization
 
@@ -224,6 +232,8 @@ Instead of a large continuous WFM transmission, the band was mostly noise with o
 
 No intelligible aircraft voice transmission was received during this session.
 
+![Initial VH airband exploration around 123.865 MHz](../screenshots/001/04-airband-123mhz.png)
+
 There were several suspicious-looking signals and some noises that sounded vaguely like helicopter/propeller sounds, but nothing could be positively identified as aviation traffic.
 
 Which is an important lesson in itself:
@@ -231,6 +241,8 @@ Which is an important lesson in itself:
 **A weird noise is not an aircraft just because I really want it to be an aircraft.**
 
 Some persistent narrow vertical lines were also observed in the waterfall.
+
+![Persistent narrow features observed while exploring VHF airband](../screenshots/001/05-airband-waterfall.png)
 
 Because these remained present continuously at essentially fixed frequencies, they were considered more likely to be local interference, electronic spurs, or other persistent RF sources than brief aviation voice transmissions.
 
